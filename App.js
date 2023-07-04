@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { AntDesign } from '@expo/vector-icons';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello Wander!</Text>
+      <AntDesign name="play" size={50} color="black" />
       <StatusBar style="auto" />
     </View>
   );
