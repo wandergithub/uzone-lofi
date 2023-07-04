@@ -1,11 +1,17 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 
 export default function App() {
+  const handlePlay = () => {
+    console.log('Button clicked!');
+  };
   return (
     <View style={styles.container}>
-      <AntDesign name="play" size={50} color="black" />
+      <TouchableOpacity onPress={handlePlay}>
+        <AntDesign name="play" size={50} color="black" />
+      </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
   );
